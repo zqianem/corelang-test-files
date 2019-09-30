@@ -23,9 +23,9 @@ You may need to modify this slightly depending on your system.
 ./run_tests.sh "python ../corelang/interpreter.py"
 ```
 
-Note the quotes if your the command to run your interpreter involves calling
-another program (such as `java`, `python`, etc.). You may want to consider using
-a dedicated script file to encapsulate the call to the other program.
+Note the quotes if the command to run your interpreter involves calling another
+program (such as `java`, `python`, etc.). You may want to consider using a
+dedicated script file to encapsulate the call to the other program.
 
 
 ## Test and naming conventions
