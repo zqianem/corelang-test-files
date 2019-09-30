@@ -9,8 +9,6 @@ language. Not official; please use according to your own best judgement.
 ```sh
 git clone https://github.com/zqianem/corelang-test-files.git
 cd corelang-test-files
-
-./run_tests.sh [path to your interpreter]
 ```
 
 To run an interpreter compiled from C/C++:
