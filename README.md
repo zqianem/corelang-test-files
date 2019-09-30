@@ -10,10 +10,22 @@ language. Not official; please use according to your own best judgement.
 git clone https://github.com/zqianem/corelang-test-files.git
 cd corelang-test-files
 
-./run_tests.sh [path to your interpreter]
+./run_tests.sh [command_to_run_your_interpreter]
 ```
 
 You may need to modify this slightly depending on your system.
+
+### Examples
+
+```sh
+./run_tests.sh core
+./run_tests.sh "java CoreInterpreter"
+./run_tests.sh "python ../corelang/interpreter.py"
+```
+
+Note the quotes if your the command to run your interpreter involves calling
+another program (such as `java`, `python`, etc.). You may want to consider using
+a dedicated script file to encapsulate the call to the other program.
 
 
 ## Test and naming conventions

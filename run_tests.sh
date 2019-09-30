@@ -3,7 +3,7 @@
 if [ "$1" = "" ]
 then
   echo Tests not run, missing first argument
-  echo usage: $0 [path_to_interpreter_script]
+  echo usage: $0 [command_to_run_your_interpreter]
   exit 1
 fi
 
