@@ -19,6 +19,12 @@ then
 fi
 
 tests="**/*.code"
+diff_options="-u"
+
+if diff --color=always empty.data empty.data 2>/dev/null
+then
+  diff_options="-u --color=always"
+fi
 
 for t in $tests
 do
@@ -46,7 +52,7 @@ do
       echo "$output"
     fi
   else
-    output=$($1 $code $data | diff -u --color=always - $expected)
+    output=$($1 $code $data | diff $diff_options - $expected)
     if [ $? -eq 0 ]
     then
       printf "\033[0;32mPASSED\033[0m\n"
