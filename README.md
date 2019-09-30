@@ -13,7 +13,21 @@ cd corelang-test-files
 ./run_tests.sh [path to your interpreter]
 ```
 
-You may need to modify this slightly depending on your system.
+To run an interpreter compiled from C/C++:
+
+```sh
+./run_tests.sh [path to your interpreter]
+```
+
+To run an interpreter from a Python 3 script:
+
+```sh
+./run_python3_tests.sh [path to your interpreter]
+```
+
+To run an interpreter from a Python 2 script, open `run_python3_tests.sh` and change lines 39 and 49 to use the `python` executable instead.
+
+You may need to continue to modify this slightly depending on your system.
 
 
 ## Test and naming conventions
