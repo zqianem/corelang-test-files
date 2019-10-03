@@ -9,7 +9,7 @@ fi
 
 if ! hash ${1%% *} 2>/dev/null
 then
-  echo Tests not run, could not find command "${1% *}"
+  echo Tests not run, could not find command "${1%% *}"
   exit 1
 fi
 
