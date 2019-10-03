@@ -19,13 +19,12 @@ You may need to modify this slightly depending on your system.
 
 ```sh
 ./run_tests.sh core
-./run_tests.sh "java CoreInterpreter"
-./run_tests.sh "python ../corelang/interpreter.py"
+./run_tests.sh java CoreInterpreter
+./run_tests.sh python ../corelang/interpreter.py
 ```
 
-Note the quotes if the command to run your interpreter involves calling another
-program (such as `java`, `python`, etc.). You may want to consider using a
-dedicated script file to encapsulate the call to the other program.
+To simplify test running, you may want to consider using a dedicated script file
+to encapsulate the call to an other program.
 
 
 ## Test and naming conventions

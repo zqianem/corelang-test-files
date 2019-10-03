@@ -1,16 +1,9 @@
 #!/bin/sh
 
-if [ "$1" = "" ]
+if [ "$*" = "" ]
 then
-  echo Tests not run, missing first argument
+  echo Tests not run, missing required arguments
   echo usage: $0 [command_to_run_your_interpreter]
-  exit 1
-fi
-
-if [ $# -gt 1 ]
-then
-  echo Tests not run, too many agruments given
-  echo Enclose your command in quotes if it contains spaces.
   exit 1
 fi
 
@@ -44,7 +37,7 @@ do
 
   if [ $t != "${t%bad*}" ]
   then
-    output=$($1 $code $data)
+    output=$($* $code $data)
     if [ "$output" != "${output%ERROR:*}" ]
     then
       printf "\033[0;32mPASSED\033[0m\n"
@@ -54,7 +47,7 @@ do
       echo "$output"
     fi
   else
-    output=$($1 $code $data | diff $diff_options - $expected)
+    output=$($* $code $data | diff $diff_options - $expected)
     if [ $? -eq 0 ]
     then
       printf "\033[0;32mPASSED\033[0m\n"
