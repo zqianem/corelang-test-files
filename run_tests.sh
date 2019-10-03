@@ -9,7 +9,9 @@ fi
 
 if [ $# -gt 1 ]
 then
-  echo Ignoring extra arguments beyond the first...
+  echo Tests not run, too many agruments given
+  echo Enclose your command in quotes if it contains spaces.
+  exit 1
 fi
 
 if ! hash ${1%% *} 2>/dev/null
