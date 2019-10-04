@@ -1,0 +1,10 @@
+program
+  int x;
+begin
+  input x;
+  case x of
+    0 : y
+    else 4
+  end;
+  output x;
+end
