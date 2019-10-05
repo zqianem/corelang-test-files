@@ -1,0 +1,11 @@
+program
+  int i, d;
+begin
+  i := 0;
+  while !(i = 100) begin
+    i := i + 10;
+    input d;
+    output d;
+  endwhile;
+  output i;
+end

@@ -1,0 +1,20 @@
+program
+  int i, j, n;
+begin
+  i := 0;
+  n := 0;
+
+  while i < 9 begin
+    j := 0;
+    while j < 6 begin
+      n := n + 2;
+      j := j + 1;
+      if 100 < n then
+        j := 6;
+        i := 9;
+      endif;
+    endwhile;
+    i := i + 1;
+  endwhile;
+  output n; 
+end

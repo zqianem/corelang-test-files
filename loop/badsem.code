@@ -1,0 +1,8 @@
+program
+  int i;
+begin
+  while i=100 begin
+    i := i + 10;
+  endwhile;
+  output i;
+end

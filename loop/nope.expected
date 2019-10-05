@@ -1,0 +1,10 @@
+program
+  int i;
+begin
+  i:=0;
+  while i=100 begin
+    i:=i+10;
+  endwhile;
+  output i;
+end
+0

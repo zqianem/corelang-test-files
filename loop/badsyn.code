@@ -1,0 +1,9 @@
+program
+  int i;
+begin
+  i := 0;
+  while !(i = 100) begin
+    i := i + 10;
+  end;
+  output i;
+end
