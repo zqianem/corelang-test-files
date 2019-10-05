@@ -1,0 +1,11 @@
+program
+  int x, y;
+begin
+  x := 1;
+  case x of
+      0 : 2
+    | 1 : 24 + 2 * y
+    else 4
+  end;
+  output x;
+end
