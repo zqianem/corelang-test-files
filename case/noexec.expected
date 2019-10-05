@@ -1,10 +1,11 @@
 program
   int x;
 begin
-  input x;
+  x:=1;
   case x of
-    0 : y
+    0:y
     else 4
   end;
   output x;
 end
+4
