@@ -1,0 +1,12 @@
+
+program int X , Y , XY 	; begin
+
+          input X;
+		  
+		  case X of 1,2,3 : Y | 4,5,6 : Y else Y end;
+		  
+		  
+		  output X;
+
+          end  
+      

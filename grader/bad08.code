@@ -1,0 +1,17 @@
+
+program int X , Y , XY 	; begin
+
+        input X, Y;
+		
+		while !() begin
+		
+			Y := Y * Y;
+			X := X - 1;
+			
+		endwhile;
+		
+		output Y;
+		
+		
+end  
+      

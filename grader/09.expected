@@ -1,0 +1,17 @@
+program
+  int X,Y,XY;
+begin
+  X:=100;
+  Y:=10;
+  XY:=100;
+  if X<=Y then
+    if !(X=XY) then
+      output 0-1;
+    endif;
+  else
+    output 1;
+  endif;
+  output X;
+end
+1
+100

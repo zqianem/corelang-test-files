@@ -1,0 +1,8 @@
+program
+  int X,Y,XY;
+begin
+  input X;
+  case X of 1,2,3 : 1 | 4,5,6 : 2 else 3 end;
+  output X;
+end
+3
