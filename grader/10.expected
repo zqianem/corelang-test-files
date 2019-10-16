@@ -4,9 +4,9 @@ begin
   input X,Y;
   while !(X=0) begin
     case Y of
-       1:Y+1
+      1:Y+1
       |1,2:Y-1
-       else 3
+      else 3
     end;
     X:=X-1;
   endwhile;
